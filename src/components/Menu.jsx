@@ -1,9 +1,10 @@
 'use client'
 import React, { useRef, useState } from 'react'
-import { cocktailLists, sliderLists } from '../../constants'
+import {  sliderLists } from '../../constants'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 const Menu = () => {
     
     const contentRef= useRef(); 
